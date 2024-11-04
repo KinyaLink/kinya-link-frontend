@@ -1,7 +1,22 @@
-import { ScrollView, View, Text, TextInput, Image, TouchableOpacity } from "react-native";
+import {
+  ScrollView,
+  View,
+  Text,
+  TextInput,
+  Image,
+  TouchableOpacity,
+} from "react-native";
 import React from "react";
 import { IconAlignLeft } from "@tabler/icons-react-native";
-import { BellIcon, Phone } from "lucide-react-native";
+import {
+  BellIcon,
+  Mail,
+  MessageCircleMore,
+  Phone,
+  PhoneIncoming,
+  PhoneMissed,
+  Video,
+} from "lucide-react-native";
 
 const RecentCaller = () => {
   return (
@@ -36,13 +51,53 @@ const RecentCaller = () => {
           </Text>
         </View>
       </View>
-      <View>
+      <View className="flex-row justify-center gap-6 mt-4">
         <TouchableOpacity>
-          <View>
-            <Phone color="#FFFFFF" size={32} />
+          <View className="p-4 rounded-full border-2 border-[#202020] bg-[#101010]">
+            <Phone color="#FFFFFF90" size={32} />
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <View className="p-4 rounded-full border-2 border-[#202020] bg-[#101010]">
+            <Video color="#FFFFFF90" size={32} />
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <View className="p-4 rounded-full border-2 border-[#202020] bg-[#101010]">
+            <MessageCircleMore color="#FFFFFF90" size={32} />
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <View className="p-4 rounded-full border-2 border-[#202020] bg-[#101010]">
+            <Mail color="#FFFFFF90" size={32} />
           </View>
         </TouchableOpacity>
       </View>
+      <Text className="text-white/80 text-lg font-psemibold mt-8 ml-3">
+        Today
+      </Text>
+      <View className="flex-row gap-3">
+        <View className="bg-[#151515] w-1/2 rounded-3xl p-3 py-10 justify-center items-center">
+          <PhoneMissed color="#FF4F4F" size={30} />
+          <Text className="text-white/70 text-lg font-plight mt-3">Last</Text>
+          <Text className="text-white/90 leading-tight font-psemibold text-xl">
+            Missed Call
+          </Text>
+          <Text className="text-white/70 text-lg font-plight">11:50 AM</Text>
+        </View>
+        <View className="bg-[#151515] rounded-3xl flex-1 p-3 justify-center items-center">
+          <PhoneIncoming color="#FF4F4F" size={30} />
+          <Text className="text-white/70 text-lg font-plight mt-3">Last</Text>
+          <Text className="text-white/90 leading-tight font-psemibold text-xl">
+            Incoming Call
+          </Text>
+          <Text className="text-white/70 text-lg font-plight">11:50 AM</Text>
+        </View>
+      </View>
+      <Text className="text-white/80 text-lg font-psemibold mt-8 ml-3">
+        More Settings
+      </Text>
+      <View></View>
     </ScrollView>
   );
 };

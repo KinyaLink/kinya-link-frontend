@@ -19,12 +19,7 @@ const TabsLayout = () => {
           height: 70,
           justifyContent: "center",
           alignContent: "center",
-          position: "absolute",
-          bottom: 10,
-          marginHorizontal: 10,
-          borderRadius: 20,
           backgroundColor: "#101010",
-          zIndex: 10,
         },
       }}
     >
