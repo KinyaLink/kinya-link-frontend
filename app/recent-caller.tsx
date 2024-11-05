@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 import React from "react";
-import { IconAlignLeft } from "@tabler/icons-react-native";
+import { IconAlignLeft, IconBan } from "@tabler/icons-react-native";
 import {
   BellIcon,
   Mail,
@@ -97,7 +97,36 @@ const RecentCaller = () => {
       <Text className="text-white/80 text-lg font-psemibold mt-8 ml-3">
         More Settings
       </Text>
-      <View></View>
+      <View>
+        <TouchableOpacity className="px-3 py-2 rounded-xl flex-row items-center gap-3">
+          <View className="bg-[#151515] p-2 rounded-full border border-white/10">
+            <IconBan size={28} color="#FFFFFF50" />
+          </View>
+          <View>
+            <Text className="font-plight text-xl text-white">Block number</Text>
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity className="px-3 py-2 rounded-xl flex-row items-center gap-3">
+          <View className="bg-[#151515] p-2 rounded-full border border-white/10">
+            <IconBan size={28} color="#FFFFFF50" />
+          </View>
+          <View>
+            <Text className="font-plight text-xl text-white">
+              Delete number
+            </Text>
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity className="px-3 py-2 rounded-xl flex-row items-center gap-3">
+          <View className="bg-[#151515] p-2 rounded-full border border-white/10">
+            <IconBan size={28} color="#FFFFFF50" />
+          </View>
+          <View>
+            <Text className="font-plight text-xl text-white">
+              Add number to email
+            </Text>
+          </View>
+        </TouchableOpacity>
+      </View>
     </ScrollView>
   );
 };

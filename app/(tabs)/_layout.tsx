@@ -4,6 +4,7 @@ import TabBarButton from "~/components/TabBarButton";
 import { House, Languages } from "lucide-react-native";
 import {
   IconHistory,
+  IconMessage2,
   IconUserCircle,
 } from "@tabler/icons-react-native";
 import CreateCall from "~/components/CreateCall";
@@ -56,8 +57,8 @@ const TabsLayout = () => {
         options={{
           tabBarIcon: () => (
             <TabBarButton
-              tabBarLabel="Talk"
-              tabBarIcon={<Languages size={32} color={"#FFFFFF"} />}
+              tabBarLabel="Chat"
+              tabBarIcon={<IconMessage2 size={32} color={"#FFFFFF"} />}
             />
           ),
         }}
