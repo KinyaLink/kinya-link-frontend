@@ -1,6 +1,6 @@
 import { Image, Text, View, ScrollView, TouchableOpacity } from "react-native";
 import React from "react";
-import { IconAlignLeft, IconBan } from "@tabler/icons-react-native";
+import { IconAlignLeft, IconBan, IconEdit, IconTrash } from "@tabler/icons-react-native";
 import {
   BellIcon,
   Mail,
@@ -41,36 +41,78 @@ const profile = () => {
           </Text>
         </View>
       </View>
-      <View className="flex-1 gap-2 py-5 px-3">
-        <Text className="text-white/80 font-pbold ">Personal Info</Text>
-        <View>
-          <View>
-            <Text className="text-white/40 font-plight text-lg">Username</Text>
-            <Text className="text-white/90 font-pregular text-xl tracking-tighter">
-              Arman Rokni
-            </Text>
+      <View className="flex-1 py-5 pl-3">
+        <Text className="text-white/80 font-pbold pt-3">Personal Info</Text>
+        <View className="gap-5 py-3">
+          <View className="flex-1 flex-row justify-between items-end">
+            <View className="">
+              <Text className="text-white/40 font-plight text-lg">
+                Username
+              </Text>
+              <Text className="text-white/90 font-pregular text-xl tracking-tighter">
+                Arman Rokni
+              </Text>
+            </View>
+            <View className="flex-row gap-2">
+              <IconEdit color="#FFFFFF80" />
+            </View>
           </View>
-          <View>
-            <Text className="text-white">
-              Edit 
-            </Text>
+          <View className="flex-row justify-between items-end">
+            <View>
+              <Text className="text-white/40 font-plight text-lg">Email</Text>
+              <Text className="text-white/90 font-pregular text-xl tracking-tighter">
+                arman.rokni@gmail.com
+              </Text>
+            </View>
+            <View className="flex-row gap-2">
+              <IconEdit color="#FFFFFF80" />
+            </View>
+          </View>
+          <View className="flex-row justify-between items-end">
+            <View>
+              <Text className="text-white/40 font-plight text-lg">
+                Mobile number
+              </Text>
+              <Text className="text-white/90 font-pregular text-xl tracking-tighter">
+                +250 795 617 693
+              </Text>
+            </View>
+            <View className="flex-row gap-2">
+              <IconEdit color="#FFFFFF80" />
+            </View>
+          </View>
+          <View className="flex-row justify-between items-end">
+            <View>
+              <Text className="text-white/40 font-plight text-lg">
+                Location
+              </Text>
+              <Text className="text-white/90 font-pregular text-xl tracking-tighter">
+                Kigali City, Kicukiro
+              </Text>
+            </View>
+            <View className="flex-row gap-2">
+              <IconEdit color="#FFFFFF80" />
+            </View>
           </View>
         </View>
+        <Text className="text-white/80 font-pbold pt-3">More Settings</Text>
         <View>
-          <Text>Email</Text>
-          <Text>Arman Rokni</Text>
-        </View>
-        <View>
-          <Text>Mobile Number</Text>
-          <Text>+250795617693</Text>
-        </View>
-        <View>
-          <Text>Location</Text>
-          <Text>Kigali City, Kicukiro</Text>
-        </View>
-        <View>
-          <Text>Location</Text>
-          <Text>Kigali City, Kicukiro</Text>
+          <TouchableOpacity className="py-2 rounded-xl flex-row justify-between items-center gap-3">
+            <View>
+              <Text className="font-plight text-xl text-white/50">
+                Block your number
+              </Text>
+            </View>
+            <IconBan size={28} color="#FFFFFF50" />
+          </TouchableOpacity>
+          <TouchableOpacity className="py-2 rounded-xl flex-row justify-between items-center gap-3">
+            <View>
+              <Text className="font-plight text-xl text-white/50">
+                Delete your number
+              </Text>
+            </View>
+            <IconTrash size={28} color="#FFFFFF50" />
+          </TouchableOpacity>
         </View>
       </View>
     </ScrollView>
