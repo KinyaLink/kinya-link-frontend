@@ -53,7 +53,7 @@ const TabsLayout = () => {
         }}
       />
       <Tabs.Screen
-        name="translate"
+        name="chat"
         options={{
           tabBarIcon: () => (
             <TabBarButton
