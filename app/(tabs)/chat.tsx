@@ -20,6 +20,7 @@ const translate = () => {
     <ScrollView className="flex-1 bg-[#0F0F0F]">
       <ImageBackground
         source={require("~/assets/images/chat-background.jpg")}
+        resizeMode="cover"
         className="flex-1"
       >
         <View className="flex-1 bg-[#101010] flex-row justify-between items-center px-3 py-2">
