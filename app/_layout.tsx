@@ -3,10 +3,8 @@ import { View } from "react-native";
 
 export default function RootLayout() {
   return (
-    <View>
-      <Stack>
-        <Stack.Screen name="index" options={{ headerShown: false }} />
-      </Stack>
-    </View>
+    <Stack>
+      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+    </Stack>
   );
 }
