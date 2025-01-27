@@ -6,6 +6,7 @@ export default function Index() {
     <View>
       <Text style={styles.text}>Edit app/index.tsx to edit this screen.</Text>
       <Link href="./(auth)/sign-up">Go to Sign Up</Link>
+      <Link href="./(auth)/onboarding">Go to Onboarding Screen</Link>
     </View>
   );
 }
