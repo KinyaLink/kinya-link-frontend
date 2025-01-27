@@ -5,6 +5,7 @@ import AuthButton from "@/components/AuthButton";
 import LoginForm from "@/components/LoginForm";
 import React, { useState } from "react";
 import { useFonts } from "expo-font";
+import { Link } from "expo-router";
 import {
   View,
   Text,
@@ -35,10 +36,18 @@ const SignUp = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <View style={{ display: "flex", alignItems: "center" }}>
+      <View
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "flex-end",
+          height: "100%",
+          paddingBottom: "30%",
+        }}
+      >
         <Image
           source={require("../../assets/images/kl-logo.png")}
-          style={{ position: "absolute", bottom: 120 }}
+          style={{ position: "absolute", top: -20 }}
         />
         <Text style={styles.title}>
           Sign
@@ -94,11 +103,11 @@ const SignUp = () => {
             of KinyaLink
           </Text>
         </View>
-        <View>
-          <AuthButton
-            buttonText="Register"
-          />
-        </View>
+        <Link href="/sign-in">
+          <View>
+            <AuthButton buttonText="Register" />
+          </View>
+        </Link>
       </View>
     </SafeAreaView>
   );
