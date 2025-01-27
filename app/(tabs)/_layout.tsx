@@ -6,7 +6,13 @@ import React from "react";
 
 const TabsLayout = () => {
   return (
-    <Tabs initialRouteName="dashboard">
+    <Tabs initialRouteName="dashboard"
+    screenOptions={{
+      tabBarShowLabel: false,
+      tabBarStyle: {
+        height: 80,
+      }
+    }}>
       <Tabs.Screen
         name="index"
         options={{
