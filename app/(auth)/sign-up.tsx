@@ -24,6 +24,7 @@ const SignUp = () => {
     "Geist-Light": require("../../assets/fonts/geist/Geist-Light.ttf"),
     "Geist-Thin": require("../../assets/fonts/geist/Geist-Thin.ttf"),
     "Geist-ExtraLight": require("../../assets/fonts/geist/Geist-ExtraLight.ttf"),
+    "Geist-ExtraBold": require("../../assets/fonts/geist/Geist-ExtraBold.ttf"),
   });
 
   if (!areFontsLoaded) {
