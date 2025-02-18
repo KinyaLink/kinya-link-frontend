@@ -6,30 +6,35 @@ import React from "react";
 
 const TabsLayout = () => {
   return (
-    <Tabs initialRouteName="dashboard"
-    screenOptions={{
-      tabBarShowLabel: false,
-      tabBarStyle: {
-        height: 80,
-      }
-    }}>
+    <Tabs
+      initialRouteName="dashboard"
+      screenOptions={{
+        tabBarShowLabel: false,
+        tabBarStyle: {
+          height: 80,
+        },
+      }}
+    >
       <Tabs.Screen
         name="index"
         options={{
-          tabBarIcon: () => (
-            <TabBarButton
-              tabBarLabel="Home"
-              tabBarIcon={
-                <MaterialCommunityIcons name="home" size={36} color="black" />
-              }
-            />
+          tabBarIcon: ({ focused }) => (
+            <View style={{ alignItems: "center", justifyContent: "center" }}>
+              <MaterialCommunityIcons
+                name="home"
+                size={24}
+                color={focused ? "#7cc" : "#000"}
+              />
+              <Text style={{ fontSize: 12, color: focused ? "#7cc" : "#000" }}>
+                Home
+              </Text>
+            </View>
           ),
         }}
       />
       <Tabs.Screen
         name="dashboard"
         options={{
-          title: "Dashboard",
           tabBarIcon: () => (
             <TabBarButton
               tabBarLabel="Dashboard"
