@@ -10,7 +10,7 @@ import { IconLayoutDashboard } from "@tabler/icons-react-native";
 const TabsLayout = () => {
   return (
     <Tabs
-      initialRouteName="dashboard"
+      initialRouteName="index"
       screenOptions={{
         tabBarShowLabel: false,
         tabBarStyle: {
@@ -33,7 +33,7 @@ const TabsLayout = () => {
         }}
       />
       <Tabs.Screen
-        name="dashboard"
+        name="panel"
         options={{
           tabBarIcon: () => (
             <TabBarButton
@@ -44,22 +44,22 @@ const TabsLayout = () => {
         }}
       />
       <Tabs.Screen
-        name="dashboard"
+        name="profile"
         options={{
           tabBarIcon: () => (
             <TabBarButton
-              tabBarLabel="Panel"
+              tabBarLabel="Profile"
               tabBarIcon={<IconLayoutDashboard size={32} color={"#505050"} />}
             />
           ),
         }}
       />
       <Tabs.Screen
-        name="dashboard"
+        name="feed"
         options={{
           tabBarIcon: () => (
             <TabBarButton
-              tabBarLabel="Panel"
+              tabBarLabel="Feed"
               tabBarIcon={<IconLayoutDashboard size={32} color={"#505050"} />}
             />
           ),
