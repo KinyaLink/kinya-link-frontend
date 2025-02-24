@@ -10,11 +10,15 @@ const TabsLayout = () => {
       initialRouteName="index"
       screenOptions={{
         tabBarShowLabel: false,
+        headerShown: false,
         tabBarStyle: {
           height: 70,
           justifyContent: "center",
           alignContent: "center",
           position: "relative",
+          top: -10,
+          marginHorizontal: 10,
+          borderRadius: 20,
         },
       }}
     >
