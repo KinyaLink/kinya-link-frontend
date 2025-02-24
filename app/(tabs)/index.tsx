@@ -1,13 +1,15 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Text, ScrollView, View } from "react-native";
 import React from "react";
+import Header from "~/components/Header";
 
 const Index = () => {
   return (
-    <View>
-      <Text>index</Text>
-    </View>
+    <ScrollView className="px-3 py-6 bg-[#050505] flex-1">
+      <View className="flex-1 w-full bg-[#ee]">
+        <Header />
+      </View>
+    </ScrollView>
   );
 };
 
 export default Index;
-

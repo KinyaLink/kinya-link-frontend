@@ -15,10 +15,12 @@ const TabsLayout = () => {
           height: 70,
           justifyContent: "center",
           alignContent: "center",
-          position: "relative",
-          top: -10,
+          position: "absolute",
+          bottom: 10,
           marginHorizontal: 10,
           borderRadius: 20,
+          backgroundColor: "#151515",
+          zIndex: 10,
         },
       }}
     >
@@ -28,7 +30,7 @@ const TabsLayout = () => {
           tabBarIcon: ({ focused }) => (
             <TabBarButton
               tabBarLabel="Home"
-              tabBarIcon={<House size={32} color={"#505050"} />}
+              tabBarIcon={<House size={32} color={"#FFFFFF"} />}
             />
           ),
         }}
@@ -39,7 +41,7 @@ const TabsLayout = () => {
           tabBarIcon: () => (
             <TabBarButton
               tabBarLabel="Panel"
-              tabBarIcon={<IconLayoutDashboard size={32} color={"#505050"} />}
+              tabBarIcon={<IconLayoutDashboard size={32} color={"#FFFFFF"} />}
             />
           ),
         }}
@@ -50,7 +52,7 @@ const TabsLayout = () => {
           tabBarIcon: () => (
             <TabBarButton
               tabBarLabel="Profile"
-              tabBarIcon={<IconLayoutDashboard size={32} color={"#505050"} />}
+              tabBarIcon={<IconLayoutDashboard size={32} color={"#FFFFFF"} />}
             />
           ),
         }}
@@ -61,7 +63,7 @@ const TabsLayout = () => {
           tabBarIcon: () => (
             <TabBarButton
               tabBarLabel="Feed"
-              tabBarIcon={<IconLayoutDashboard size={32} color={"#505050"} />}
+              tabBarIcon={<IconLayoutDashboard size={32} color={"#FFFFFF"} />}
             />
           ),
         }}
