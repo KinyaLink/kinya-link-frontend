@@ -2,6 +2,7 @@ import { Text, ScrollView, View, TouchableOpacity } from "react-native";
 import React from "react";
 import Header from "~/components/Header";
 import { IconClock } from "@tabler/icons-react-native";
+import CallsChart from "~/components/CallsChart";
 
 const Index = () => {
   return (
@@ -48,10 +49,18 @@ const Index = () => {
               <Text className="text-white/50">1hr 38mins</Text>
             </View>
           </View>
-          <View className="flex flex-col">
-            <View className="w-1/2 bg-[#151515]"></View>
-            <View className="w-1/2 bg-[#151515]"></View>
+          <View className="flex-1 flex-col h-full gap-3">
+            <View className="flex-1 h-1/2 bg-[#151515] rounded-3xl"></View>
+            <View className="flex-1 h-1/2 bg-[#151515] rounded-3xl"></View>
           </View>
+        </View>
+        <View className="flex-1 flex-row h-36 gap-3">
+          <View className="flex-1 bg-[#151515] rounded-3xl"></View>
+          <View className="flex-1 bg-[#151515] rounded-3xl"></View>
+          <View className="flex-1 bg-[#151515] rounded-3xl"></View>
+        </View>
+        <View className="flex-1 bg-[#151515] h-full">
+          <CallsChart />
         </View>
       </View>
     </ScrollView>
