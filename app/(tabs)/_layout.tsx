@@ -50,7 +50,7 @@ const TabsLayout = () => {
       <Tabs.Screen
         name="call"
         options={{
-          tabBarIcon: () => <CreateCall />,
+          tabBarIcon: () => <CreateCall />
         }}
       />
       <Tabs.Screen
