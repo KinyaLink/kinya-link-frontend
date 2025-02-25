@@ -19,7 +19,7 @@ const TabsLayout = () => {
           bottom: 10,
           marginHorizontal: 10,
           borderRadius: 20,
-          backgroundColor: "#151515",
+          backgroundColor: "#101010",
           zIndex: 10,
         },
       }}
