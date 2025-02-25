@@ -4,7 +4,7 @@ import { BarChart } from "react-native-gifted-charts";
 
 const CallsChart = () => {
   return (
-    <View className="flex-1 px-4 py-3 bg-[#151515] mt-3 rounded-3xl">
+    <View className="flex-1 px-4 py-3 bg-[#151515] mt-3 rounded-3xl mb-32">
       <Text className="text-white/50 text-xl font-pbold">Calls Chart</Text>
       <Text className="text-white/50 font-plight">For One Week</Text>
       <View className="flex-1 w-full mt-5 mb-4">
@@ -31,11 +31,13 @@ const CallsChart = () => {
           xAxisColor="#FFFFFF10"
           yAxisThickness={0}
           xAxisThickness={1}
-          xAxisLabelTextStyle={{ color: "#FFFFFF90", fontFamily: "Poppins-Light" }}
+          xAxisLabelTextStyle={{
+            color: "#FFFFFF90",
+            fontFamily: "Poppins-Light",
+          }}
           yAxisTextStyle={{ color: "#FFFFFF40" }}
         />
       </View>
-      
     </View>
   );
 };

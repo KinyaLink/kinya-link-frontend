@@ -3,6 +3,7 @@ import { Tabs } from "expo-router";
 import TabBarButton from "~/components/TabBarButton";
 import { House } from "lucide-react-native";
 import { IconLayoutDashboard } from "@tabler/icons-react-native";
+import CreateCall from "~/components/CreateCall";
 
 const TabsLayout = () => {
   return (
@@ -19,7 +20,7 @@ const TabsLayout = () => {
           bottom: 10,
           marginHorizontal: 10,
           borderRadius: 20,
-          backgroundColor: "#101010",
+          backgroundColor: "#151515",
           zIndex: 10,
         },
       }}
@@ -44,6 +45,12 @@ const TabsLayout = () => {
               tabBarIcon={<IconLayoutDashboard size={32} color={"#FFFFFF"} />}
             />
           ),
+        }}
+      />
+      <Tabs.Screen
+        name="call"
+        options={{
+          tabBarIcon: () => <CreateCall />,
         }}
       />
       <Tabs.Screen

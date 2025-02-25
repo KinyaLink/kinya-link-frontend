@@ -59,15 +59,6 @@ const Index = () => {
         <View className="flex-1 bg-[#151515] rounded-3xl"></View>
       </View>
       <CallsChart />
-      <View className="flex-1 flex-row h-36 gap-3 mt-3">
-        <View className="flex-1 bg-[#151515] rounded-3xl"></View>
-        <View className="flex-1 bg-[#151515] rounded-3xl"></View>
-        <View className="flex-1 bg-[#151515] rounded-3xl"></View>
-      </View><View className="flex-1 flex-row h-36 gap-3 mt-3">
-        <View className="flex-1 bg-[#151515] rounded-3xl"></View>
-        <View className="flex-1 bg-[#151515] rounded-3xl"></View>
-        <View className="flex-1 bg-[#151515] rounded-3xl"></View>
-      </View>
     </ScrollView>
   );
 };
