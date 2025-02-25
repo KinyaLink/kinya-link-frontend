@@ -8,6 +8,13 @@ const Index = () => {
       <View className="flex-1 w-full bg-[#ee]">
         <Header />
       </View>
+      <View className="pt-5">
+        <Text className="text-white font-pregular leading-tight">Welcome!!</Text>
+        <Text className="font-pbold text-white/50 text-2xl">Dashboard</Text>
+      </View>
+      <View>
+        
+      </View>
     </ScrollView>
   );
 };

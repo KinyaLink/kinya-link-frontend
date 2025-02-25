@@ -8,14 +8,17 @@ const Header = () => {
     <View className="flex-1 flex-row justify-between items-center w-full">
       <View className="flex-row items-center gap-4">
         <View>
-          <IconAlignLeft color="#ffffff" size={32} />
+          <IconAlignLeft color="#FFFFFF80" size={32} />
         </View>
         <View className="w-3/4 self-start">
-          <TextInput className="bg-[#151515] rounded-full px-6 pt-5" placeholderTextColor="#FFFFFF50" placeholderClassName="opacity-50 font-plight" placeholder="Search..."/>
+          <TextInput
+            className="bg-[#151515] rounded-full px-6 py-3 placeholder:text-white/50 placeholder:font-pregular"
+            placeholder="Search..."
+          />
         </View>
       </View>
       <View>
-        <BellIcon color="#ffffff" size={30} />
+        <BellIcon color="#FFFFFF80" size={30} />
       </View>
     </View>
   );
