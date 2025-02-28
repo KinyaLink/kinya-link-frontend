@@ -1,8 +1,8 @@
 import React from "react";
 import { Tabs } from "expo-router";
 import TabBarButton from "~/components/TabBarButton";
-import { House } from "lucide-react-native";
-import { IconLayoutDashboard } from "@tabler/icons-react-native";
+import { ConciergeBell, House } from "lucide-react-native";
+import { IconHistory, IconLayoutDashboard } from "@tabler/icons-react-native";
 import CreateCall from "~/components/CreateCall";
 
 const TabsLayout = () => {
@@ -37,23 +37,6 @@ const TabsLayout = () => {
         }}
       />
       <Tabs.Screen
-        name="panel"
-        options={{
-          tabBarIcon: () => (
-            <TabBarButton
-              tabBarLabel="Panel"
-              tabBarIcon={<IconLayoutDashboard size={32} color={"#FFFFFF"} />}
-            />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="call"
-        options={{
-          tabBarIcon: () => <CreateCall />
-        }}
-      />
-      <Tabs.Screen
         name="profile"
         options={{
           tabBarIcon: () => (
@@ -65,12 +48,30 @@ const TabsLayout = () => {
         }}
       />
       <Tabs.Screen
-        name="feed"
+        name="call"
+        options={{
+          tabBarIcon: () => <CreateCall />,
+        }}
+      />
+      <Tabs.Screen
+        name="translate"
         options={{
           tabBarIcon: () => (
             <TabBarButton
-              tabBarLabel="Feed"
+              tabBarLabel="Translate"
               tabBarIcon={<IconLayoutDashboard size={32} color={"#FFFFFF"} />}
+            />
+          ),
+        }}
+      />
+
+      <Tabs.Screen
+        name="recents"
+        options={{
+          tabBarIcon: () => (
+            <TabBarButton
+              tabBarLabel="Recent"
+              tabBarIcon={<IconHistory size={32} color={"#FFFFFF"} />}
             />
           ),
         }}
