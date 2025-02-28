@@ -1,9 +1,13 @@
 import "../global.css";
 import { View, Text } from "react-native";
+import { useRef, useEffect } from "react";
 import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
+import LottieView from "lottie-react-native";
 
 export default function Layout() {
+  const animation = useRef<LottieView>(null);
+
   const [areFontsLoaded] = useFonts({
     "Poppins-Regular": require("~/assets/fonts/poppins/Poppins-Regular.ttf"),
     "Poppins-Bold": require("~/assets/fonts/poppins/Poppins-Bold.ttf"),
@@ -20,8 +24,18 @@ export default function Layout() {
 
   if (!areFontsLoaded) {
     return (
-      <View className="flex justify-center items-center">
-        <Text>Loading fonts...</Text>
+      <View className="flex-1 w-full h-full justify-center items-center">
+        <LottieView
+          autoPlay
+          ref={animation}
+          style={{
+            width: 200,
+            height: 200,
+            backgroundColor: "transparent",
+          }}
+          source={require("~/assets/animations/animation-1.json")}
+        />
+        <Text>Loading..</Text>
       </View>
     );
   }
