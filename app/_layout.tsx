@@ -35,7 +35,7 @@ export default function Layout() {
           }}
           source={require("~/assets/animations/animation-1.json")}
         />
-        <Text>Loading..</Text>
+        <Text className="font-pregular text-xl">Loading..</Text>
       </View>
     );
   }
