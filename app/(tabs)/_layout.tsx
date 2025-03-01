@@ -1,10 +1,9 @@
 import React from "react";
 import { Tabs } from "expo-router";
 import TabBarButton from "~/components/TabBarButton";
-import { ConciergeBell, House, Languages } from "lucide-react-native";
+import { House, Languages } from "lucide-react-native";
 import {
   IconHistory,
-  IconLayoutDashboard,
   IconUserCircle,
 } from "@tabler/icons-react-native";
 import CreateCall from "~/components/CreateCall";
@@ -24,7 +23,7 @@ const TabsLayout = () => {
           bottom: 10,
           marginHorizontal: 10,
           borderRadius: 20,
-          backgroundColor: "#151515",
+          backgroundColor: "#101010",
           zIndex: 10,
         },
       }}
@@ -62,14 +61,14 @@ const TabsLayout = () => {
         options={{
           tabBarIcon: () => (
             <TabBarButton
-              tabBarLabel="Translate"
+              tabBarLabel="Talk"
               tabBarIcon={<Languages size={32} color={"#FFFFFF"} />}
             />
           ),
         }}
       />
       <Tabs.Screen
-        name="recents"
+        name="recent"
         options={{
           tabBarIcon: () => (
             <TabBarButton
