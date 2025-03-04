@@ -8,7 +8,7 @@ import CallListItem from "~/components/CallListItem";
 const Recent = () => {
   return (
     <ScrollView className="px-3 py-6 bg-[#050505] flex-1">
-      <View className="flex-1 w-full mt-3">
+      <View className="mt-3">
         <Header />
       </View>
       <View className="mt-3">
