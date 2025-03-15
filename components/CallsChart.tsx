@@ -4,7 +4,7 @@ import { BarChart } from "react-native-gifted-charts";
 
 const CallsChart = () => {
   return (
-    <View className="flex-1 px-4 py-3 bg-[#151515] mt-3 rounded-3xl mb-32">
+    <View className="flex-1 px-4 py-3 bg-[#151515] mt-3 rounded-3xl ">
       <Text className="text-white/50 text-xl font-pbold">Calls Chart</Text>
       <Text className="text-white/50 font-plight">For One Week</Text>
       <View className="flex-1 w-full mt-5 mb-4">
