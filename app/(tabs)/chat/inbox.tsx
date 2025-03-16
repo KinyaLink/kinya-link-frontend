@@ -17,14 +17,14 @@ import { HandMetal, Paperclip } from "lucide-react-native";
 
 const translate = () => {
   return (
-    <ScrollView className="flex-1 bg-[#0F0F0F]">
+    <View className="flex-1 bg-[#0F0F0F]">
       <ImageBackground
         source={require("~/assets/images/chat-background.jpg")}
         resizeMode="cover"
-        className="flex-1"
+        className="h-full w-full"
       >
-        <View className="flex-1 bg-[#101010] flex-row justify-between items-center px-3 py-2">
-          <View className="flex-row justify-around items-center gap-4 px-3 py-2">
+        <View className="bg-[#101010] flex-row justify-between items-center px-3 py-4">
+          <View className="flex-row justify-around items-center gap-4 px-3">
             <IconArrowNarrowLeft size={32} color="#FFFFFF80" />
             <View className="h-16 w-16">
               <Image
@@ -46,6 +46,7 @@ const translate = () => {
             <IconVideo color="#FFFFFF50" size={28} />
           </View>
         </View>
+        <ScrollView className="flex-1 h-full"></ScrollView>
         <View className="flex-1 flex-row gap-2">
           <Paperclip color="#FFFFFF" size={32} />
           <TextInput placeholder="Write your message here" />
@@ -53,7 +54,7 @@ const translate = () => {
           <HandMetal color="#FFFFFF" size={32} />
         </View>
       </ImageBackground>
-    </ScrollView>
+    </View>
   );
 };
 
