@@ -6,7 +6,7 @@ import CallsChart from "~/components/CallsChart";
 
 const Index = () => {
   return (
-    <ScrollView className="px-3 py-6 bg-[#050505] flex-1">
+    <ScrollView className="px-3 py-6 bg-[#050505] flex-1 pb-12">
       <View className="flex-1 w-full mt-3">
         <Header />
       </View>

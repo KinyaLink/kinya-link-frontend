@@ -1,9 +1,11 @@
 import "../global.css";
 import { View, Text } from "react-native";
+import { Drawer } from "expo-router/drawer";
 import { useRef, useEffect } from "react";
 import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
 import LottieView from "lottie-react-native";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 export default function Layout() {
   const animation = useRef<LottieView>(null);
@@ -24,27 +26,35 @@ export default function Layout() {
 
   if (!areFontsLoaded) {
     return (
-      <View className="flex-1 w-full h-full justify-center items-center">
-        <LottieView
-          autoPlay
-          ref={animation}
-          style={{
-            width: 200,
-            height: 200,
-            backgroundColor: "transparent",
-          }}
-          source={require("~/assets/animations/animation-1.json")}
-        />
-        <Text className="font-pregular text-xl">Loading..</Text>
-      </View>
+      <GestureHandlerRootView>
+        <View className="flex-1 w-full h-full justify-center items-center">
+          <LottieView
+            autoPlay
+            ref={animation}
+            style={{
+              width: 200,
+              height: 200,
+              backgroundColor: "transparent",
+            }}
+            source={require("~/assets/animations/animation-1.json")}
+          />
+          <Text className="font-pregular text-xl">Loading..</Text>
+        </View>
+      </GestureHandlerRootView>
     );
   }
 
   return (
-    <Stack>
-      {/* <Stack.Screen name="(auth)" options={{ headerShown: false }} /> */}
-      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-      <Stack.Screen name="recent-caller" options={{ headerShown: false }} />
-    </Stack>
+    <GestureHandlerRootView>
+      <Drawer>
+        <Drawer.Screen name="settings" />
+        <Drawer.Screen name="logout" />
+      </Drawer>
+      <Stack>
+        <Stack.Screen name="(auth)" options={{ headerShown: false }} />
+        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        <Stack.Screen name="recent-caller" options={{ headerShown: false }} />
+      </Stack>
+    </GestureHandlerRootView>
   );
 }
