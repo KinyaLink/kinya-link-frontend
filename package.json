@@ -14,6 +14,7 @@
   "dependencies": {
     "@expo/vector-icons": "^14.0.4",
     "@react-native-community/blur": "^4.4.1",
+    "@react-navigation/drawer": "^7.1.2",
     "@react-navigation/native": "^7.0.15",
     "@tabler/icons-react-native": "^3.31.0",
     "expo": "^52.0.39",

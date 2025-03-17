@@ -47,7 +47,7 @@ export default function Layout() {
   return (
     <GestureHandlerRootView>
       <Drawer>
-        <Drawer.Screen name="settings" />
+        <Drawer.Screen name="settings" options={{}}/>
         <Drawer.Screen name="logout" />
       </Drawer>
       <Stack>

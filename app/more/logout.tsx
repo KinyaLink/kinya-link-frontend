@@ -1,12 +1,12 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text } from "react-native";
+import React from "react";
 
-const logout = () => {
+const Logout = () => {
   return (
     <View>
-      <Text>logout</Text>
+      <Text>Logout</Text>
     </View>
-  )
-}
+  );
+};
 
-export default logout
+export default Logout;
