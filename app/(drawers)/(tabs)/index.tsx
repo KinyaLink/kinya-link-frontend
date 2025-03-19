@@ -14,9 +14,9 @@ const Index = () => {
       </View>
       <View className="mt-3">
         <Text className="text-white font-pregular leading-tight">
-          Welcome!!
+          Ikaze mu !!
         </Text>
-        <Text className="font-pbold text-white/50 text-2xl">Dashboard</Text>
+        <Text className="font-pbold text-white/50 text-2xl">Urukari</Text>
         <Link href="../more">
           <Text className="text-white">hvhvu</Text>
         </Link>
@@ -24,13 +24,13 @@ const Index = () => {
       <Drawer />
       <View className="flex-1 flex-row gap-2 mt-3">
         <TouchableOpacity className="px-5 py-2 w-fit flex bg-[#151515] rounded-full">
-          <Text className="text-white/50 font-pregular">Usage</Text>
+          <Text className="text-white/50 font-pregular">Imikoreshereze</Text>
         </TouchableOpacity>
         <TouchableOpacity className="px-5 py-2 w-fit flex bg-[#151515] rounded-full">
-          <Text className="text-white/50 font-pregular">Analytics</Text>
+          <Text className="text-white/50 font-pregular">Isesengura</Text>
         </TouchableOpacity>
         <TouchableOpacity className="px-5 py-2 w-fit flex bg-[#151515] rounded-full">
-          <Text className="text-white/50 font-pregular">Others</Text>
+          <Text className="text-white/50 font-pregular">Ibyabaye</Text>
         </TouchableOpacity>
       </View>
       <View className="flex-1 flex-row justify-between p-3 px-4 rounded-3xl bg-[#151515] mt-3">
@@ -38,7 +38,7 @@ const Index = () => {
           <Text className="text-white text-2xl font-plight tracking-tight">
             <Text className="text-[#7F74F5]">John</Text> Doe
           </Text>
-          <Text className="text-white font-plight">Online</Text>
+          <Text className="text-white font-plight">Kumurongo</Text>
         </View>
         <View className="bg-[#202020] w-14 rounded-full border-2 border-white/10 h-full"></View>
       </View>

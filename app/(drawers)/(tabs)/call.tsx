@@ -1,12 +1,14 @@
-import { View, Text } from 'react-native'
+import { View, Text, ImageBackground } from 'react-native'
 import React from 'react'
 
-const call = () => {
+const Call = () => {
   return (
-    <View>
-      <Text>call</Text>
+    <View className="flex-1  bg-[#0F0F0F]">
+      <ImageBackground>
+        
+      </ImageBackground>
     </View>
   )
 }
 
-export default call
+export default Call

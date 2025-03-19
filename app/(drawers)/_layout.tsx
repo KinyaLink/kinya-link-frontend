@@ -3,6 +3,7 @@ import CustomDrawer from "~/components/CustomDrawer";
 import React from "react";
 import { Drawer } from "expo-router/drawer";
 import { IconLogout2, IconSettings } from "@tabler/icons-react-native";
+import { hide } from "expo-router/build/utils/splash";
 
 const DrawerLayout = () => {
   return (

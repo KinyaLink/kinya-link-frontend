@@ -2,7 +2,6 @@ import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import AuthButton from "~/components/AuthButton";
 import LoginForm from "~/components/LoginForm";
 import React, { useState } from "react";
-import { useFonts } from "expo-font";
 import { Link } from "expo-router";
 import {
   View,
@@ -12,12 +11,11 @@ import {
   Image,
   TouchableWithoutFeedback,
 } from "react-native";
+import { IconSquare, IconSquareCheck } from "@tabler/icons-react-native";
 
 const SignUp = () => {
   const [agreed, setAgreed] = useState(false);
-
-
-
+  
   return (
     <SafeAreaView style={styles.container}>
       <View
@@ -27,6 +25,7 @@ const SignUp = () => {
           justifyContent: "flex-end",
           height: "100%",
           paddingBottom: "30%",
+          paddingHorizontal: 5,
         }}
       >
         <Image
@@ -40,51 +39,16 @@ const SignUp = () => {
         <View>
           <LoginForm />
         </View>
-        <View
-          style={{
-            flexDirection: "row",
-            gap: 5,
-            alignItems: "center",
-            paddingTop: 10,
-          }}
-        >
+        <View className="flex-row gap-3">
           <TouchableWithoutFeedback onPress={() => setAgreed(!agreed)}>
             {agreed ? (
-              <MaterialCommunityIcons
-                name="checkbox-intermediate"
-                size={24}
-                color="#6060FF"
-              />
+              <IconSquareCheck size={28} color="#FFFFFF" />
             ) : (
-              <MaterialCommunityIcons
-                name="checkbox-blank-outline"
-                size={24}
-                color="#6060FF"
-              />
+              <IconSquare size={28} color="#FFFFFF" />
             )}
           </TouchableWithoutFeedback>
-          <Text style={styles.text}>
-            I agree to the{" "}
-            <Text
-              style={{
-                ...styles.text,
-                color: "#6060FF",
-                textDecorationLine: "underline",
-              }}
-            >
-              Terms
-            </Text>{" "}
-            and{" "}
-            <Text
-              style={{
-                ...styles.text,
-                color: "#6060FF",
-                textDecorationLine: "underline",
-              }}
-            >
-              Conditions
-            </Text>{" "}
-            of KinyaLink
+          <Text className="font-pregular text-white text-lg">
+            I agree to the Terms and Conditions of KinyaLink
           </Text>
         </View>
         <Link href="/sign-in">
@@ -115,6 +79,6 @@ const styles = StyleSheet.create({
   text: {
     color: "#FFFFFF",
     fontSize: 16,
-    fontFamily: "Geist-Regular",
+    fontFamily: "Poppins-Regular",
   },
 });

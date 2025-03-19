@@ -4,18 +4,18 @@ import { BarChart } from "react-native-gifted-charts";
 
 const CallsChart = () => {
   return (
-    <View className="flex-1 px-4 py-3 bg-[#151515] mt-3 rounded-3xl ">
+    <View className="flex-1 px-4 py-3 bg-[#0F0F0F] mt-3 rounded-3xl ">
       <Text className="text-white/50 text-xl font-pbold">Calls Chart</Text>
-      <Text className="text-white/50 font-plight">For One Week</Text>
+      <Text className="text-white/50 font-plight">Icyumweru kimwe</Text>
       <View className="flex-1 w-full mt-5 mb-4">
         <BarChart
           data={[
-            { label: "Mon", value: 30, frontColor: "#4CD55E" },
-            { label: "Tue", value: 300, frontColor: "#ED674D" },
-            { label: "Wed", value: 140, frontColor: "#D54CC5" },
-            { label: "Thur", value: 350, frontColor: "#4C4CD5" },
-            { label: "Sat", value: 230, frontColor: "#D5D34C" },
-            { label: "Sun", value: 0, frontColor: "#D5D34C" },
+            { label: "Mbe", value: 30, frontColor: "#4CD55E" },
+            { label: "Kab", value: 300, frontColor: "#ED674D" },
+            { label: "Gat", value: 140, frontColor: "#D54CC5" },
+            { label: "Kane", value: 350, frontColor: "#4C4CD5" },
+            { label: "Gat..", value: 230, frontColor: "#D5274C" },
+            { label: "Gat..", value: 0, frontColor: "#D5D34C" },
           ]}
           height={200}
           barWidth={50}

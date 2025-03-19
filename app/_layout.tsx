@@ -10,7 +10,6 @@ import { IconAlignLeft } from "@tabler/icons-react-native";
 
 export default function Layout() {
   const animation = useRef<LottieView>(null);
-
   const [areFontsLoaded] = useFonts({
     "Poppins-Regular": require("~/assets/fonts/poppins/Poppins-Regular.ttf"),
     "Poppins-Bold": require("~/assets/fonts/poppins/Poppins-Bold.ttf"),
