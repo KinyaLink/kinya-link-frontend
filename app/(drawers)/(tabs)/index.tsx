@@ -3,6 +3,8 @@ import React from "react";
 import Header from "~/components/Header";
 import { IconClock } from "@tabler/icons-react-native";
 import CallsChart from "~/components/CallsChart";
+import { Link } from "expo-router";
+import Drawer from "expo-router/drawer";
 
 const Index = () => {
   return (
@@ -15,7 +17,11 @@ const Index = () => {
           Welcome!!
         </Text>
         <Text className="font-pbold text-white/50 text-2xl">Dashboard</Text>
+        <Link href="../more">
+          <Text className="text-white">hvhvu</Text>
+        </Link>
       </View>
+      <Drawer />
       <View className="flex-1 flex-row gap-2 mt-3">
         <TouchableOpacity className="px-5 py-2 w-fit flex bg-[#151515] rounded-full">
           <Text className="text-white/50 font-pregular">Usage</Text>

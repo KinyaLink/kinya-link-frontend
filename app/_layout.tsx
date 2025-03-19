@@ -1,11 +1,12 @@
 import "../global.css";
-import { View, Text } from "react-native";
+import { View, Text, Pressable } from "react-native";
 import { Drawer } from "expo-router/drawer";
 import { useRef, useEffect } from "react";
 import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
 import LottieView from "lottie-react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
+import { IconAlignLeft } from "@tabler/icons-react-native";
 
 export default function Layout() {
   const animation = useRef<LottieView>(null);
@@ -46,13 +47,9 @@ export default function Layout() {
 
   return (
     <GestureHandlerRootView>
-      <Drawer>
-        <Drawer.Screen name="settings" options={{}}/>
-        <Drawer.Screen name="logout" />
-      </Drawer>
       <Stack>
         <Stack.Screen name="(auth)" options={{ headerShown: false }} />
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        <Stack.Screen name="(drawers)" options={{ headerShown: false }} />
         <Stack.Screen name="recent-caller" options={{ headerShown: false }} />
       </Stack>
     </GestureHandlerRootView>

@@ -1,23 +1,18 @@
 import { Image, Text, View, ScrollView, TouchableOpacity } from "react-native";
 import React from "react";
-import { IconAlignLeft, IconBan, IconEdit, IconTrash } from "@tabler/icons-react-native";
 import {
-  BellIcon,
-  Mail,
-  MessageCircleMore,
-  Phone,
-  PhoneIncoming,
-  PhoneMissed,
-  Video,
-} from "lucide-react-native";
+  IconAlignLeft,
+  IconBan,
+  IconEdit,
+  IconTrash,
+} from "@tabler/icons-react-native";
+import { BellIcon } from "lucide-react-native";
 
 const profile = () => {
   return (
     <ScrollView className="bg-[#050505] px-3 py-6 flex-1">
       <View className="mt-3">
-        <View>
-          
-        </View>
+        <View></View>
         <View className="flex-1 flex-row justify-between items-center w-full">
           <View className="flex-row items-center gap-4">
             <IconAlignLeft color="#FFFFFF80" size={32} />
