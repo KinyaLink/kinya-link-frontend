@@ -40,7 +40,7 @@ const profile = () => {
         </View>
       </View>
       <View className="flex-1 py-5 pl-3">
-        <Text className="text-white/80 font-pbold pt-3">Personal Info</Text>
+        <Text className="text-white/80 font-pbold pt-3">Amakuru yawe</Text>
         <View className="gap-5 py-3">
           <View className="flex-1 flex-row justify-between items-end">
             <View className="">

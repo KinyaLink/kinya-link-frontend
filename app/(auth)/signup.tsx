@@ -51,7 +51,7 @@ const SignUp = () => {
             I agree to the Terms and Conditions of KinyaLink
           </Text>
         </View>
-        <Link href="/sign-in">
+        <Link href="/signin">
           <View>
             <AuthButton buttonText="Register" />
           </View>

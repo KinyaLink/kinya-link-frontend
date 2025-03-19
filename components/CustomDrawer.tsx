@@ -10,12 +10,17 @@ import {
 const CustomDrawer = (props: DrawerContentComponentProps) => {
   return (
     <View>
-      <View className="w-10 h-10">
-        <Image source={require("~/assets/images/profile-image.jpg")} alt="" className="w-10 h-10" resizeMode="contain"/>
-      </View>
-      <Text>CustomDrawer</Text>
       <DrawerContentScrollView {...props}>
         <DrawerItemList {...props} />
+        <View className="w-10 h-10">
+          <Image
+            source={require("~/assets/images/profile-image.jpg")}
+            alt=""
+            className="w-10 h-10"
+            resizeMode="contain"
+          />
+        </View>
+        <Text>CustomDrawer</Text>
       </DrawerContentScrollView>
     </View>
   );
