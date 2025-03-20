@@ -17,9 +17,9 @@ const Onboarding = () => {
     <View className="flex-1 bg-[#050505] flex-col justify-center items-center px-8 pb-32">
       <Image
         source={require("../../assets/images/kl-logo.png")}
-        className="absolute top-0"
+        className="absolute -top-24"
       />
-      <View className="mt-44">
+      <View className="mt-56">
         <Text className="text-white text-3xl font-pbold text-center leading-10">
           Murakaza neza muri{" "}
           <Text className="text-4xl leading-10">

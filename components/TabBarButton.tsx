@@ -10,7 +10,7 @@ const TabBarButton = ({ tabBarLabel, tabBarIcon }: TabBarButtonProps) => {
   return (
     <View className="flex w-14 h-14 absolute top-2 flex-col justify-center items-center">
       <View className="justify-center align-center">{tabBarIcon}</View>
-      <Text className="font-lg text-white font-plight w-auto">{tabBarLabel}</Text>
+      <Text className="text-sm text-white font-plight w-auto">{tabBarLabel}</Text>
     </View>
   );
 };

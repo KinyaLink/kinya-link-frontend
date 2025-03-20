@@ -4,6 +4,7 @@ import TabBarButton from "~/components/TabBarButton";
 import { House, Languages } from "lucide-react-native";
 import {
   IconHistory,
+  IconLanguage,
   IconMessage2,
   IconUserCircle,
 } from "@tabler/icons-react-native";
@@ -29,8 +30,10 @@ const TabsLayout = () => {
         options={{
           tabBarIcon: ({ focused }) => (
             <TabBarButton
-              tabBarLabel="Home"
-              tabBarIcon={<House size={32} color={"#FFFFFF"} />}
+              tabBarLabel="Urukari"
+              tabBarIcon={
+                <House size={28} color={`${focused ? "#6060FF" : "#FFFFFF"}`} />
+              }
             />
           ),
         }}
@@ -38,10 +41,15 @@ const TabsLayout = () => {
       <Tabs.Screen
         name="profile"
         options={{
-          tabBarIcon: () => (
+          tabBarIcon: ({ focused }) => (
             <TabBarButton
-              tabBarLabel="Profile"
-              tabBarIcon={<IconUserCircle size={32} color={"#FFFFFF"} />}
+              tabBarLabel="Wowe"
+              tabBarIcon={
+                <IconUserCircle
+                  size={32}
+                  color={`${focused ? "#6060FF" : "#FFFFFF"}`}
+                />
+              }
             />
           ),
         }}
@@ -49,16 +57,56 @@ const TabsLayout = () => {
       <Tabs.Screen
         name="call"
         options={{
-          tabBarIcon: () => <CreateCall />,
+          tabBarIcon: ({ focused }) => <CreateCall />,
         }}
       />
       <Tabs.Screen
         name="chat"
         options={{
+          tabBarIcon: ({ focused }) => (
+            <TabBarButton
+              tabBarLabel="Semu.."
+              tabBarIcon={
+                <IconLanguage
+                  size={32}
+                  color={`${focused ? "#6060FF" : "#FFFFFF"}`}
+                />
+              }
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="recent-caller"
+        options={{
+          tabBarItemStyle: {
+            display: "none",
+          },
+          tabBarIcon: ({ focused 
+            
+          }) => (
+            <TabBarButton
+              tabBarLabel="Semu.."
+              tabBarIcon={
+                <IconLanguage
+                  size={32}
+                  color={`${focused ? "#6060FF" : "#FFFFFF"}`}
+                />
+              }
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="notifications"
+        options={{
+          tabBarItemStyle: {
+            display: "none",
+          },
           tabBarIcon: () => (
             <TabBarButton
-              tabBarLabel="Chat"
-              tabBarIcon={<IconMessage2 size={32} color={"#FFFFFF"} />}
+              tabBarLabel="Semu.."
+              tabBarIcon={<IconLanguage size={32} color={"#FFFFFF"} />}
             />
           ),
         }}
@@ -68,7 +116,7 @@ const TabsLayout = () => {
         options={{
           tabBarIcon: () => (
             <TabBarButton
-              tabBarLabel="Recent"
+              tabBarLabel="Ibyab.."
               tabBarIcon={<IconHistory size={32} color={"#FFFFFF"} />}
             />
           ),

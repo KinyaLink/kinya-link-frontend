@@ -1,7 +1,12 @@
 import { Text, ScrollView, View, TouchableOpacity } from "react-native";
 import React from "react";
 import Header from "~/components/Header";
-import { IconClock } from "@tabler/icons-react-native";
+import {
+  IconClock,
+  IconSpeakerphone,
+  IconTax,
+  IconVideo,
+} from "@tabler/icons-react-native";
 import CallsChart from "~/components/CallsChart";
 import { Link } from "expo-router";
 import Drawer from "expo-router/drawer";
@@ -13,13 +18,8 @@ const Index = () => {
         <Header />
       </View>
       <View className="mt-3">
-        <Text className="text-white font-pregular leading-tight">
-          Ikaze mu !!
-        </Text>
+        <Text className="text-white font-pregular leading-tight">Ikaze mu</Text>
         <Text className="font-pbold text-white/50 text-2xl">Urukari</Text>
-        <Link href="../more">
-          <Text className="text-white">hvhvu</Text>
-        </Link>
       </View>
       <Drawer />
       <View className="flex-1 flex-row gap-2 mt-3">
@@ -48,10 +48,10 @@ const Index = () => {
             <IconClock color="#FFFFFF50" size={45} />
           </View>
           <View>
-            <Text className="font-pregular text-white text-2xl">
-              AirTime Usage
+            <Text className="font-pregular text-white text-xl leading-tight">
+              AirTime Wakoresheze
             </Text>
-            <Text className="text-white/50">1hr 38mins</Text>
+            <Text className="text-white/50 font-pregular">1hr 38mins</Text>
           </View>
         </View>
         <View className="flex-1 flex-col h-full gap-3">
@@ -60,9 +60,35 @@ const Index = () => {
         </View>
       </View>
       <View className="flex-1 flex-row h-36 gap-3 mt-3">
-        <View className="flex-1 bg-[#151515] rounded-3xl"></View>
-        <View className="flex-1 bg-[#151515] rounded-3xl"></View>
-        <View className="flex-1 bg-[#151515] rounded-3xl"></View>
+        <View className="flex-1 bg-[#151515] rounded-3xl items-center justify-center p-2">
+          <Text className="text-white font-pregular leading-tight">
+            Ifatabuguzi
+          </Text>
+          <Text className="text-white/50 font-pbold leading-tight pb-1">
+            ryawe
+          </Text>
+          <View>
+            <IconTax size={48} color="#FFFFFF90" />
+          </View>
+        </View>
+        <View className="flex-1 bg-[#151515] rounded-3xl items-center justify-center p-2 gap">
+          <Text className="text-white font-pregular leading-tight">Ijambo</Text>
+          <Text className="text-white/50 font-pbold leading-tight pb-1">
+            ry' umunsi
+          </Text>
+          <View>
+            <IconSpeakerphone size={48} color="#FFFFFF90" />
+          </View>
+        </View>
+        <View className="flex-1 bg-[#151515] rounded-3xl items-center justify-center p-2">
+          <Text className="text-white font-pregular leading-tight">Semura</Text>
+          <Text className="text-white/50 font-pbold leading-tight pb-1">
+            Video
+          </Text>
+          <View>
+            <IconVideo size={48} color="#FFFFFF90" />
+          </View>
+        </View>
       </View>
       <CallsChart />
     </ScrollView>

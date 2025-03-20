@@ -1,61 +1,17 @@
-import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
-import AuthButton from "~/components/AuthButton";
 import LoginForm from "~/components/LoginForm";
-import React, { useState } from "react";
-import { Link } from "expo-router";
-import {
-  View,
-  Text,
-  SafeAreaView,
-  StyleSheet,
-  Image,
-  TouchableWithoutFeedback,
-} from "react-native";
-import { useFormik } from "formik";
-import { IconSquare, IconSquareCheck } from "@tabler/icons-react-native";
+import React from "react";
+import { View, Text, SafeAreaView, StyleSheet, Image } from "react-native";
 
 const SignUp = () => {
-  const [agreed, setAgreed] = useState(false);
-
   return (
-    <SafeAreaView style={styles.container}>
-      <View
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "flex-end",
-          height: "100%",
-          paddingBottom: "30%",
-          paddingHorizontal: 5,
-        }}
-      >
-        <Image
-          source={require("../../assets/images/kl-logo.png")}
-          style={{ position: "absolute", top: -20 }}
-        />
-        <Text style={{ ...styles.title, color: "#6060FF" }}>Iyandikishe</Text>
-        <View>
-          <LoginForm />
-        </View>
-        <View className="flex-row gap-3">
-          <TouchableWithoutFeedback onPress={() => setAgreed(!agreed)}>
-            {agreed ? (
-              <IconSquareCheck size={28} color="#FFFFFF" />
-            ) : (
-              <IconSquare size={28} color="#FFFFFF" />
-            )}
-          </TouchableWithoutFeedback>
-          <Text className="font-pregular text-white text-lg">
-            I agree to the Terms and Conditions of KinyaLink
-          </Text>
-        </View>
-        <Link href="/signin">
-          <View>
-            <AuthButton goTo="/(auth)/signin" buttonText="Register" />
-          </View>
-        </Link>
-      </View>
-    </SafeAreaView>
+    <View className="items-center justify-end h-full pb-10 px-2 bg-[#0F0F0F]">
+      <Image
+        source={require("../../assets/images/kl-logo.png")}
+        className="absolute -top-24"
+      />
+      <Text style={{ ...styles.title, color: "#6060FF" }}>Iyandikishe</Text>
+      <LoginForm />
+    </View>
   );
 };
 
