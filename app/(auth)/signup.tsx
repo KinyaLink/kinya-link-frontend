@@ -11,11 +11,12 @@ import {
   Image,
   TouchableWithoutFeedback,
 } from "react-native";
+import { useFormik } from "formik";
 import { IconSquare, IconSquareCheck } from "@tabler/icons-react-native";
 
 const SignUp = () => {
   const [agreed, setAgreed] = useState(false);
-  
+
   return (
     <SafeAreaView style={styles.container}>
       <View
@@ -32,10 +33,7 @@ const SignUp = () => {
           source={require("../../assets/images/kl-logo.png")}
           style={{ position: "absolute", top: -20 }}
         />
-        <Text style={styles.title}>
-          Sign
-          <Text style={{ ...styles.title, color: "#6060FF" }}>Up</Text>
-        </Text>
+        <Text style={{ ...styles.title, color: "#6060FF" }}>Iyandikishe</Text>
         <View>
           <LoginForm />
         </View>
@@ -53,7 +51,7 @@ const SignUp = () => {
         </View>
         <Link href="/signin">
           <View>
-            <AuthButton buttonText="Register" />
+            <AuthButton goTo="/(auth)/signin" buttonText="Register" />
           </View>
         </Link>
       </View>

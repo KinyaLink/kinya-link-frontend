@@ -6,12 +6,15 @@ import {
   ActivityIndicator,
   StyleSheet,
 } from "react-native";
+import { useRouter } from "expo-router";
 
 interface Props {
   buttonText: string;
+  goTo: string;
 }
-const AuthButton = ({ buttonText }: Props) => {
+const AuthButton = ({ buttonText, goTo }: Props) => {
   const [isLoading, setIsLoading] = useState(false);
+  const router = useRouter();
   return (
     <TouchableOpacity
       style={styles.buttonContainer}
@@ -20,6 +23,7 @@ const AuthButton = ({ buttonText }: Props) => {
         setTimeout(() => {
           setIsLoading(false);
           console.log("Simulated..");
+          router.push(goTo as any)
         }, 2000);
       }}
     >

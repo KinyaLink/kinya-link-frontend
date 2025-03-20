@@ -2,6 +2,7 @@ import "../global.css";
 import { View, Text, Pressable } from "react-native";
 import { Drawer } from "expo-router/drawer";
 import { useRef, useEffect } from "react";
+import { useRouter } from "expo-router";
 import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
 import LottieView from "lottie-react-native";

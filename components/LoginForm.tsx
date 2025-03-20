@@ -38,7 +38,7 @@ const LoginForm = () => {
       }) => (
         <View>
           <FormInputField
-            onChange={() => ""}
+            onChange={() => handleChange("email")}
             placeholder="Email"
             icon={
               <MaterialCommunityIcons
@@ -49,10 +49,13 @@ const LoginForm = () => {
             }
           />
           <FormInputField
+            onChange={() => handleChange("username")}
             placeholder="Username"
             icon={<FontAwesome5 name="user-circle" size={30} color="white" />}
           />
           <FormInputField
+            onBlur={handleBlur}
+            onChange={() => handleChange("password")}
             placeholder="Password"
             icon={
               <MaterialCommunityIcons
@@ -64,6 +67,8 @@ const LoginForm = () => {
           />
           <FormInputField
             placeholder="Confirm Password"
+            onBlur={handleBlur}
+            onChange={() => handleChange("confirmPassword")}
             icon={
               <MaterialCommunityIcons
                 name="shield-check-outline"
