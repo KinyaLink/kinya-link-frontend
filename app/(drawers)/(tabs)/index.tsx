@@ -8,7 +8,6 @@ import {
   IconVideo,
 } from "@tabler/icons-react-native";
 import CallsChart from "~/components/CallsChart";
-import { Link } from "expo-router";
 import Drawer from "expo-router/drawer";
 
 const Index = () => {

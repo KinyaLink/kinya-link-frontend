@@ -5,7 +5,6 @@ const Call = () => {
   return (
     <View className="flex-1  bg-[#0F0F0F]">
       <ImageBackground>
-        
       </ImageBackground>
     </View>
   )

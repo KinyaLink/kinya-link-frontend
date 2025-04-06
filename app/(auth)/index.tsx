@@ -1,11 +1,4 @@
-import {
-  SafeAreaView,
-  StyleSheet,
-  Text,
-  ScrollView,
-  View,
-  Pressable,
-} from "react-native";
+import { Text, View, Pressable } from "react-native";
 import { Image } from "react-native";
 import React from "react";
 import AuthButton from "~/components/AuthButton";
@@ -28,13 +21,13 @@ const Onboarding = () => {
         </Text>
         <Text className="text-white text-lg leading-tight text-center mt-7 font-pregular">
           Renga inzitizi y'itumanaho usemura ibimenyetso by' ururimi rw’
-          amarenga mumyandiko hanyuma uhindure n' inyandiko mu rurimi
-          rw' amarenga byoroshye!
+          amarenga mumyandiko hanyuma uhindure n' inyandiko mu rurimi rw'
+          amarenga byoroshye!
         </Text>
       </View>
-      <Pressable onPress={() => router.push("/signup")}>
+      <Pressable onPress={() => router.push("/register")}>
         <View className="mt-5">
-          <AuthButton buttonText="Tangira usemure ubu" goTo="./signup" />
+          <AuthButton buttonText="Tangira usemure ubu" goTo="./register" />
         </View>
       </Pressable>
     </View>

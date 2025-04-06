@@ -5,7 +5,7 @@ import AuthButton from "~/components/AuthButton";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import FormInputField from "~/components/FormInputField";
 
-const Signin = () => {
+const Login = () => {
   return (
     <View className="items-center justify-end h-full pb-10 px-2 bg-[#0F0F0F]">
       <Image
@@ -46,4 +46,4 @@ const Signin = () => {
   );
 };
 
-export default Signin;
+export default Login;

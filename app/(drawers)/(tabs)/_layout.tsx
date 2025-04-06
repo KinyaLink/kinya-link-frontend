@@ -1,11 +1,10 @@
 import React from "react";
 import { Tabs } from "expo-router";
 import TabBarButton from "~/components/TabBarButton";
-import { House, Languages } from "lucide-react-native";
+import { House } from "lucide-react-native";
 import {
   IconHistory,
   IconLanguage,
-  IconMessage2,
   IconUserCircle,
 } from "@tabler/icons-react-native";
 import CreateCall from "~/components/CreateCall";
@@ -72,41 +71,6 @@ const TabsLayout = () => {
                   color={`${focused ? "#6060FF" : "#FFFFFF"}`}
                 />
               }
-            />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="recent-caller"
-        options={{
-          tabBarItemStyle: {
-            display: "none",
-          },
-          tabBarIcon: ({ focused 
-            
-          }) => (
-            <TabBarButton
-              tabBarLabel="Semu.."
-              tabBarIcon={
-                <IconLanguage
-                  size={32}
-                  color={`${focused ? "#6060FF" : "#FFFFFF"}`}
-                />
-              }
-            />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="notifications"
-        options={{
-          tabBarItemStyle: {
-            display: "none",
-          },
-          tabBarIcon: () => (
-            <TabBarButton
-              tabBarLabel="Semu.."
-              tabBarIcon={<IconLanguage size={32} color={"#FFFFFF"} />}
             />
           ),
         }}

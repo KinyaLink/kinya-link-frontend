@@ -1,16 +1,14 @@
 import "../global.css";
-import { View, Text, Pressable } from "react-native";
-import { Drawer } from "expo-router/drawer";
-import { useRef, useEffect } from "react";
-import { useRouter } from "expo-router";
+import { View, Text } from "react-native";
+import { useRef } from "react";
 import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
 import LottieView from "lottie-react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
-import { IconAlignLeft } from "@tabler/icons-react-native";
 
 export default function Layout() {
   const animation = useRef<LottieView>(null);
+  
   const [areFontsLoaded] = useFonts({
     "Poppins-Regular": require("~/assets/fonts/poppins/Poppins-Regular.ttf"),
     "Poppins-Bold": require("~/assets/fonts/poppins/Poppins-Bold.ttf"),

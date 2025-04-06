@@ -6,7 +6,7 @@ import { PhoneMissed } from "lucide-react-native";
 const CallListItem = () => {
   const router = useRouter();
   return (
-    <TouchableOpacity onPress={() => router.push("/(drawers)/(tabs)/recent-caller")}>
+    <TouchableOpacity onPress={() => router.push("/recent-caller")}>
       <View className="flex flex-1 rounded-xl flex-row justify-between items-center px-1 py-3">
         <View className="flex-row gap-4 items-center">
           <View className="h-auto w-auto rounded-full p-2 border-2 border-violet-500 bg-[#202020]">
